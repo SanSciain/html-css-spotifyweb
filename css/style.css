@@ -9,6 +9,7 @@
 html{
     font-family: 'Montserrat', sans-serif;
     font-size: 62.5%;
+    color: grey;
 }
 
 a{
@@ -59,26 +60,65 @@ img{
 /* Navigation Side Bar */
 .side-bar nav{
     padding: 1.2em 0;
-    /* test */
-    background-color: rgb(146, 121, 88);
-    height:100px ;
 }
-
 
 .side-bar nav li{
     height: 20px;
     font-size: 1.2em;
+    margin: .5em 0;
+}
+
+.side-bar nav li span{
+    padding-left: .2em;
+    vertical-align: middle;
+}
+
+.side-bar nav li img{
+    vertical-align: middle;
+}
+
+.side-bar nav ul li:first-child{
     color: white;
-    display: flex;
-    align-items: center;
+    font-weight: 700;
 }
 
+
+/* Playlists Side Bar */
 .side-bar .playlists{
-    /* test */
-    background-color: aqua;
-    height: 200px;
+    padding: 1em 0;
 }
 
+.side-bar .playlists h2{
+    color: white;
+    font-weight: bolder;
+    text-transform: uppercase;
+    font-size: 1.5em;
+}
+
+.side-bar .playlists li{
+    margin: .5em 0;
+    font-size: 1.1em;
+    padding: .3em 0;
+}
+
+.side-bar .playlists li span{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+    line-height: 30px;
+    color: black ;
+    background-color: #a3a3a3 ;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+
+
+
+/* Footer Side Bar */
 .side-bar footer{
     /* test */
     background-color: aquamarine;
