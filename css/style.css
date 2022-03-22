@@ -120,7 +120,7 @@ img{
 }
 
 .side-bar .playlist{
-    min-width: 100px;
+    min-height: 100px;
     overflow-y: auto;
     background-color: blueviolet;
 }
