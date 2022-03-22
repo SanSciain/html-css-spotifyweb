@@ -1,3 +1,10 @@
+/* Varaibles */
+:root{
+    --sidebar-width: 200px;
+    --sidebar-width-xs:50px;
+}
+
+
 /* Reset */
 *{
     margin: 0;
@@ -29,10 +36,10 @@ img{
 .container{
     display: flex;
     height: calc(100vh - 80px);
-    align-items:stretch ;
+    /* align-items:stretch ; */
     /* test */
     background-color: green;
-    
+
 }
 
 
@@ -40,12 +47,18 @@ img{
 
 /* Side Bar */
 .side-bar{
-    width: 20%;
+    width: var(--sidebar-width);
+    height: 100%;
     background-color: #000000;
-    overflow-y: auto;
+    overflow-y: hidden;
     padding: 0 2em;
-    display: flex;
-    flex-wrap: wrap;
+}
+
+/* Side Bar Main */
+.side-bar main{
+    height: calc(100% - 80px);
+    /* Test */
+    background-color: violet;
 }
 
 /* Logo */
@@ -80,9 +93,16 @@ img{
     vertical-align: middle;
 }
 
+
+
+
+                                    /* Sistemare il bordino verde a sinistra */
+
+
 .side-bar nav ul li:first-child{
     color: white;
     font-weight: 700;
+    border-left: 2px solid yellowgreen;
 }
 
 
@@ -99,13 +119,20 @@ img{
     font-size: 1.5em;
 }
 
-.side-bar .playlists li{
+.side-bar .playlist{
+    min-width: 100px;
+    overflow-y: auto;
+    background-color: blueviolet;
+}
+
+.side-bar .playlists li,
+.side-bar .playlists .create{
     margin: .5em 0;
     font-size: 1.1em;
     padding: .3em 0;
 }
 
-.side-bar .playlists li span{
+.side-bar .playlists .create span{
     display: inline-block;
     width: 30px;
     height: 30px;
@@ -123,12 +150,11 @@ img{
 
 
 /* Footer Side Bar */
-
 .side-bar footer{
-    /* margin-top: 27em; */
-    align-self: flex-end;
     width: 100%;
-    height: auto;
+    height: 80px;
+    /* test */
+    background-color: aqua;
 }
 
 .side-bar footer .install{
@@ -162,13 +188,14 @@ img{
 
 /* Main */
 .container > main{
-    display: flex;
-    align-items: stretch;
-    width: 80%;
+    /* display: flex; */
+    /*align-items: stretch; */
+    height: 100%;
+    width: calc(100% - var(--sidebar-width));
     position: relative;
     /* test */
     background-color: greenyellow;
-    
+
 }
 
 /* Header */
@@ -177,12 +204,13 @@ img{
 main header{
     /* background-color: rgba(0, 0, 0, 0.6); */
     background-color: gold;
-    width: 100%;
+    width: calc(100% - 200px);
     height: 60px;
     position: fixed;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
+    right:0;
+    top: 0;
+    text-align: right;
+    line-height: 60px;
 }
 
 main header .button{
@@ -193,6 +221,7 @@ main header .button{
     color: white;
     border: 1px solid white;
     border-radius: 10px;
+    line-height: normal;
 }
 
 
@@ -200,6 +229,7 @@ main header .button{
 
 /* Content */
 .main-content{
+    height: 100%;
     background-color:#141922 ;
     width: 100%;
     overflow-y: auto;
