@@ -1,7 +1,7 @@
 /* Varaibles */
 :root{
     --sidebar-width: 200px;
-    --sidebar-width-xs:60px;
+    --sidebar-width-xs:50px;
 }
 
 
@@ -56,8 +56,8 @@ img{
 @media screen and (max-width:599px) {
     .side-bar{
         width: var(--sidebar-width-xs);
+        padding: 0 1em;
     }
-    
 }
 
 /* Side Bar Main */
@@ -77,6 +77,16 @@ img{
 
 .logo-container img{
     width: 70%;
+}
+
+@media screen and (max-width:599px) {
+    .logo-container{
+        height: 30px;
+    }
+
+    .logo-container img{
+        content: url("../img/logo-small.svg");
+    }
 }
 
 
@@ -101,6 +111,15 @@ img{
     vertical-align: middle;
 }
 
+@media screen and (max-width:599px) {
+    .side-bar nav{
+        padding: 0;
+    }
+
+    .side-bar nav li span{
+        display: none;
+    }
+}
 
 
 
@@ -113,12 +132,23 @@ img{
     border-left: 2px solid yellowgreen;
 }
 
+@media screen and (max-width:599px) {
+    .side-bar nav ul li:first-child{
+        border: none;
+    }
+}
 
 /* Playlists Side Bar */
 .side-bar .playlists{
     padding: 1em 0;
     width: 100%;
     overflow-y: hidden;
+}
+
+@media screen and (max-width:599px) {
+    .side-bar .playlists{
+        display: none;
+    }
 }
 
 .side-bar .playlists h2{
@@ -187,7 +217,11 @@ img{
     vertical-align: middle;
 }
 
-
+@media screen and (max-width:599px) {
+    .side-bar footer{
+        display: none;
+    }
+}
 
 
 
