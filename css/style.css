@@ -50,13 +50,17 @@ img{
     width: var(--sidebar-width);
     height: 100%;
     background-color: #000000;
-    overflow-y: hidden;
     padding: 0 2em;
+    overflow-y: hidden;
 }
 
 /* Side Bar Main */
 .side-bar main{
     height: calc(100% - 80px);
+    min-height: 350px;
+    overflow-y: hidden;
+    display: flex;
+    flex-direction: column;
     /* Test */
     background-color: violet;
 }
@@ -120,7 +124,7 @@ img{
 }
 
 .side-bar .playlist{
-    min-height: 100px;
+    height: 80%;
     overflow-y: auto;
     background-color: blueviolet;
 }
