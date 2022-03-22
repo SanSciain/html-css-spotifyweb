@@ -132,6 +132,16 @@ img{
     border-left: 2px solid yellowgreen;
 }
 
+                                    /* Possibile soluzione che però non funziona */
+                                    
+/* .side-bar nav ul li:first-child::before{
+    content: "";
+    border-left: 2px solid yellowgreen;
+    vertical-align: middle;
+    position: relative;
+    right: 17px;
+} */
+
 @media screen and (max-width:599px) {
     .side-bar nav ul li:first-child{
         border: none;
