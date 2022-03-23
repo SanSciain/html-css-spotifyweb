@@ -161,7 +161,7 @@ img{
     }
 }
 
-.side-bar .playlists h3{
+.side-bar .playlists h4{
     color: white;
     font-weight: bolder;
     text-transform: uppercase;
@@ -324,6 +324,7 @@ main header .button{
 .main-content ul{
     display: flex;
     justify-content: center;
+    text-align: center;
     
 }
 
@@ -341,13 +342,86 @@ main header .button{
 
 .row{
     margin: 2em 0;
-    /* test */
-    background-color: red;
-    height: 300px;
+}
+
+.row .title{
+    padding: 1em;
+}
+
+.row .title h2{
+    color: white;
+    font-weight: bold;
+    font-size: 2.1em;
+}
+
+.row .title h3{
+    font-size: 1.1em;
+}
+
+.row .item{
+    width: calc(84%/6) ;
+    text-align: center;
+    margin: 0 2%;
+}
+
+@media screen and (max-width:1100px) {
+    .row .item{
+        width: calc(84%/4);
+    }
+}
+
+@media screen and (max-width:700px) {
+    .row .item{
+        width: calc(84%/2);
+    }
+}
+
+.row .item .img-container{
+    width: 100%;
+}
+
+.row .item .img-container img{
+    width: 100%;
+}
+
+.row .item h4{
+    font-weight: bold;
+    font-size: 1.2em;
+    color: white;
+    margin: 1em 0;
+}
+
+.row .item h5{
+    font-size: 1.1em;
+    margin-bottom: 1.5em;
+}
+
+/* Row Playlists */
+
+.row > .playlists{
+    display: flex;
+}
+
+@media screen and (max-width:1100px) {
+    .row > .playlists{
+        flex-wrap: wrap;
+    }
+}
+
+/* Row Mixes and Artists*/
+
+.row > .item-container{
+    display: flex;
 }
 
 
-/* Row Playlists */
+.row .item.artist .img-container{
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+
+
 
 
 
