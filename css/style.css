@@ -53,7 +53,7 @@ img{
     overflow-y: hidden;
 }
 
-@media screen and (max-width:599px) {
+@media screen and (max-width:600px) {
     .side-bar{
         width: var(--sidebar-width-xs);
         padding: 0 1em;
@@ -79,7 +79,7 @@ img{
     width: 70%;
 }
 
-@media screen and (max-width:599px) {
+@media screen and (max-width:600px) {
     .logo-container{
         height: 30px;
     }
@@ -111,7 +111,7 @@ img{
     vertical-align: middle;
 }
 
-@media screen and (max-width:599px) {
+@media screen and (max-width:600px) {
     .side-bar nav{
         padding: 0;
     }
@@ -133,7 +133,7 @@ img{
 }
 
                                     /* Possibile soluzione che però non funziona */
-                                    
+
 /* .side-bar nav ul li:first-child::before{
     content: "";
     border-left: 2px solid yellowgreen;
@@ -142,7 +142,7 @@ img{
     right: 17px;
 } */
 
-@media screen and (max-width:599px) {
+@media screen and (max-width:600px) {
     .side-bar nav ul li:first-child{
         border: none;
     }
@@ -155,13 +155,13 @@ img{
     overflow-y: hidden;
 }
 
-@media screen and (max-width:599px) {
+@media screen and (max-width:600px) {
     .side-bar .playlists{
         display: none;
     }
 }
 
-.side-bar .playlists h2{
+.side-bar .playlists h3{
     color: white;
     font-weight: bolder;
     text-transform: uppercase;
@@ -227,11 +227,30 @@ img{
     vertical-align: middle;
 }
 
-@media screen and (max-width:599px) {
-    .side-bar footer{
+@media screen and (max-width:600px) {
+    .side-bar footer span{
         display: none;
     }
+
+    .side-bar footer .user,
+    .side-bar footer .install{
+        padding: 0;
+        margin-top: .8em;
+        border: 0;
+        text-align: center;
+    }
+
 }
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -248,7 +267,7 @@ img{
 
 }
 
-@media screen and (max-width:599px) {
+@media screen and (max-width:600px) {
     .container > main{
         width:calc(100% - var(--sidebar-width-xs));
     }
@@ -256,11 +275,9 @@ img{
 }
 
 /* Header */
-                                    /* Capire perchè il bottone non compare  */
 
 main header{
-    /* background-color: rgba(0, 0, 0, 0.6); */
-    background-color: gold;
+    background-color: rgba(0, 0, 0, 0.6);
     width: calc(100% - var(--sidebar-width));
     height: 60px;
     position: fixed;
@@ -269,7 +286,7 @@ main header{
     text-align: right;
     line-height: 60px;
 }
-@media screen and (max-width:599px) {
+@media screen and (max-width:600px) {
     main header{
         width:calc(100% - var(--sidebar-width-xs));
     }
@@ -281,9 +298,10 @@ main header .button{
     padding: .5em 1.5em;
     margin-right: 2em;
     text-transform: uppercase;
+    font-weight: 700;
     color: white;
     border: 1px solid white;
-    border-radius: 10px;
+    border-radius: 20px;
     line-height: normal;
 }
 
@@ -298,13 +316,28 @@ main header .button{
     overflow-y: auto;
 }
 
-
+/* Content Header */
 .main-content nav{
-    margin-top: 60px;
-    /* test */
-    background-color: blue;
-    height: 20px;
+    margin-top: 70px;
 }
+
+.main-content ul{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.main-content ul li{
+    margin: 0 1.5em;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.1em;
+}
+
+                                    /* Inserire la linea verde sotto il primo li */
+
+
+
 
 .row{
     margin: 2em 0;
@@ -312,6 +345,15 @@ main header .button{
     background-color: red;
     height: 300px;
 }
+
+
+/* Row Playlists */
+
+
+
+
+
+
 
 
 
