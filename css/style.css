@@ -32,6 +32,15 @@ img{
     height: 100%;
 }
 
+.clearfix::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+
+
 /* Container */
 .container{
     display: flex;
@@ -345,7 +354,8 @@ main header .button{
 }
 
 .row .title{
-    padding: 1em;
+    padding: 2em;
+    line-height: 2.5em;
 }
 
 .row .title h2{
@@ -438,17 +448,29 @@ main header .button{
 
 /* Footer */
 body > footer{
-    height: 80px;
+    height: 70px;
     background-color:#282828 ;
 }
 
-col{
-    width: 20%;
-    align-self: stretch;
+.col{
+    width: 200px;
+    height: 100%;
+    float: left;
+    /* test */
+    background-color: green;
 }
 
-col.center{
-    width: 40%;
+.col.center{
+    width: calc(100% - 400px);
+    display: flex;
+    justify-content: center;
     /* test */
     background-color: yellow;
+}
+
+.col.center .player{
+    width: 80%;
+
+    /* test */
+    background-color: orange;
 }
