@@ -32,11 +32,6 @@ img{
     height: 100%;
 }
 
-.clearfix::after{
-    content: "";
-    display: table;
-    clear: both;
-}
 
 
 
@@ -449,28 +444,130 @@ main header .button{
 /* Footer */
 body > footer{
     height: 70px;
+    display: flex;
+    justify-content: space-between;
     background-color:#282828 ;
 }
 
 .col{
-    width: 200px;
+    width: 250px;
     height: 100%;
-    float: left;
-    /* test */
-    background-color: green;
 }
 
-.col.center{
-    width: calc(100% - 400px);
+/* Col Left */
+
+.left{
     display: flex;
-    justify-content: center;
-    /* test */
-    background-color: yellow;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1em;
 }
 
-.col.center .player{
-    width: 80%;
+.left .album-container{
+    width: 50px;
+}
 
-    /* test */
-    background-color: orange;
+.left .album-container img{
+    width: 100%;
+}
+
+.left .album-title h5{
+    font-size: 1em;
+    color: white;
+}
+
+.left .album-icons{
+    font-size: 1.5em;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.left .album-icons i{
+    margin-left: 1em;
+}
+
+
+
+
+
+/* Col Center */
+.col.center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+}
+
+
+.center .player i{
+    font-size: 1.2em;
+    width: 30px;
+    text-align: center;
+    vertical-align: middle;
+    color: white;
+}
+
+.center .player .play{
+    font-size: 2.5em;
+}
+
+
+.center .timeline{
+    width: 80%;
+    margin-top: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+}
+
+
+
+
+
+
+
+/* Col Right */
+.right{
+    display: flex;
+    align-items: center;
+    padding: 1em;
+}
+
+.right ul{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.right li{
+    font-size: 1.2em;
+    color: white;
+}
+
+.audio{
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+/* Slider */
+.slider{
+    width: 80%;
+    height: 5px;
+    background-color: #505050;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+
+                                    /* Capire perchè non compare lo slider interno */
+
+.slider .inner-slider{
+    height: 100%;
+    color: white;
+    width: 40%;
 }

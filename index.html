@@ -7,6 +7,9 @@
     <title>Spotify</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="css/style.css">
@@ -218,20 +221,58 @@
 
     
     <!-- Footer -->
-    <footer class="clearfix">
-
-        <div class="col right">
-            
-        </div>
-
-        <div class="col center">
-            <div class="player">
-
-            </div>
-        </div>
+    <footer>
 
         <div class="col left">
 
+            <div class="album-container">
+                <img src="img/sinister.jpeg" alt="">
+            </div>
+
+            <div class="album-title">
+                <h5>Sinister</h5>
+                <span>Brano Nome</span>
+            </div>
+
+            <div class="album-icons">
+                <i class="far fa-heart"></i>
+                <i class="far fa-folder"></i>
+            </div>
+        </div>
+
+        <div class="col center">
+
+            <div class="player">
+                <i class="fas fa-random"></i>
+                <i class="fas fa-step-backward"></i>
+                <i class="far fa-play-circle play"></i>
+                <i class="fas fa-step-forward"></i>
+                <i class="fas fa-redo"></i>
+            </div>
+
+            <div class="timeline">
+                <span>0.25</span>
+
+                <div class="slider">
+                    <div class="inner-slider"></div>
+                </div>
+
+                <span>4.25</span>
+            </div>
+
+        </div>
+
+        <div class="col right">
+            <ul>
+                <li><i class="fas fa-list"></i></li>
+                <li><i class="fas fa-desktop"></i></li>
+                <li class="audio">
+                    <i class="fas fa-volume-up"></i>
+                    <div class="slider">
+                        <div class="inner-slider"></div>
+                    </div>
+                </li>
+            </ul>
         </div>
 
     </footer>
