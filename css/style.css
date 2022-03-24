@@ -21,6 +21,15 @@ html{
 
 a{
     text-decoration: none;
+    cursor: pointer;
+}
+
+a:visited{
+    color: grey;
+}
+
+a:hover{
+    color: white;
 }
 
 ul{
@@ -106,7 +115,7 @@ img{
     margin: .5em 0;
 }
 
-.side-bar nav li span{
+.side-bar nav li a{
     padding-left: .2em;
     vertical-align: middle;
 }
@@ -120,7 +129,7 @@ img{
         padding: 0;
     }
 
-    .side-bar nav li span{
+    .side-bar nav li a{
         display: none;
     }
 }
@@ -177,6 +186,10 @@ img{
     overflow-y: auto;
 }
 
+.side-bar .playlists .create{
+    display: block;
+}
+
 .side-bar .playlists li,
 .side-bar .playlists .create{
     margin: .5em 0;
@@ -197,6 +210,11 @@ img{
     vertical-align: middle;
     margin-right: 5px;
 }
+
+.side-bar .playlists .create:hover span{
+    background-color: white;
+}
+
 
 
 
@@ -307,6 +325,10 @@ main header .button{
     border: 1px solid white;
     border-radius: 20px;
     line-height: normal;
+}
+
+main header .button:hover{
+    transform: scale(1.2);
 }
 
 
@@ -510,6 +532,17 @@ body > footer{
     color: white;
 }
 
+.left .album-title h5:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.left .album-title span:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
 .left .album-icons{
     font-size: 1.5em;
     display: flex;
@@ -544,6 +577,10 @@ body > footer{
 
 .center .player .play{
     font-size: 2.5em;
+}
+
+.center .player .play:hover{
+    transform: scale(1.5);
 }
 
 
