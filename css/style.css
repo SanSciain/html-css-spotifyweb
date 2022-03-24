@@ -41,7 +41,10 @@ img{
     height: 100%;
 }
 
-
+/* Body */
+body{
+    min-width: 550px;
+}
 
 
 
@@ -62,7 +65,6 @@ img{
     width: var(--sidebar-width);
     height: 100%;
     background-color: #000000;
-    padding: 0 2em;
     overflow-y: hidden;
 }
 
@@ -85,6 +87,7 @@ img{
 /* Logo */
 .logo-container{
     height: 60px;
+    padding: 0 2em;
     object-fit: contain;
 }
 
@@ -110,9 +113,11 @@ img{
 }
 
 .side-bar nav li{
+    padding: 0 2em;
     height: 20px;
     font-size: 1.2em;
     margin: .5em 0;
+    border-left: 3px solid transparent;
 }
 
 .side-bar nav li a{
@@ -136,24 +141,13 @@ img{
 
 
 
-                                    /* Sistemare il bordino verde a sinistra */
-
 
 .side-bar nav ul li:first-child{
     color: white;
     font-weight: 700;
-    /* border-left: 2px solid yellowgreen; */
+    border-left: 3px solid yellowgreen;
 }
 
-                                    /* Possibile soluzione che però non funziona */
-
-.side-bar nav ul li:first-child::before{
-    content: "";
-    border-left: 2px solid yellowgreen;
-    vertical-align: middle;
-    position: relative;
-    right: 17px;
-}
 
 @media screen and (max-width:600px) {
     .side-bar nav ul li:first-child{
@@ -163,7 +157,7 @@ img{
 
 /* Playlists Side Bar */
 .side-bar .playlists{
-    padding: 1em 0;
+    padding: 1em 2em;
     width: 100%;
     overflow-y: hidden;
 }
