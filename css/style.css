@@ -142,18 +142,18 @@ img{
 .side-bar nav ul li:first-child{
     color: white;
     font-weight: 700;
-    border-left: 2px solid yellowgreen;
+    /* border-left: 2px solid yellowgreen; */
 }
 
                                     /* Possibile soluzione che però non funziona */
 
-/* .side-bar nav ul li:first-child::before{
+.side-bar nav ul li:first-child::before{
     content: "";
     border-left: 2px solid yellowgreen;
     vertical-align: middle;
     position: relative;
     right: 17px;
-} */
+}
 
 @media screen and (max-width:600px) {
     .side-bar nav ul li:first-child{
@@ -279,13 +279,9 @@ img{
 
 /* Main */
 .container > main{
-    /* display: flex; */
-    /*align-items: stretch; */
     height: 100%;
     width: calc(100% - var(--sidebar-width));
     position: relative;
-    /* test */
-    background-color: greenyellow;
 
 }
 
@@ -359,10 +355,23 @@ main header .button:hover{
     text-transform: uppercase;
     font-weight: 700;
     font-size: 1.1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-                                    /* Inserire la linea verde sotto il primo li */
 
+.main-content ul li::after{
+    content: "";
+    width: 40%;
+    border-bottom: 2px solid transparent;
+    margin:2px;
+}
+
+.main-content ul li:first-child:after{
+    border-color: yellowgreen;
+}
 
 
 
@@ -636,7 +645,6 @@ body > footer{
 }
 
 
-                                    /* Capire perchè non compare lo slider interno */
 
 .slider .inner-slider{
     height: 100%;
