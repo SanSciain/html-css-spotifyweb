@@ -560,7 +560,7 @@ body > footer{
     height: 5px;
     background-color: #505050;
     border-radius: 5px;
-    overflow: hidden;
+    position: relative;
 }
 
 
@@ -570,4 +570,19 @@ body > footer{
     height: 100%;
     background-color: white;
     width: 40%;
+    border-radius: 5px;
+}
+
+
+.slider::after{
+    content: "";
+    display: block;
+    background-color: white;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    position: absolute;
+    left: 39%;
+    top: 50%;
+    transform: translateY(-50%);
 }
