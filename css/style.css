@@ -568,6 +568,6 @@ body > footer{
 
 .slider .inner-slider{
     height: 100%;
-    color: white;
+    background-color: white;
     width: 40%;
 }
